@@ -2,10 +2,6 @@ package infotechg.model;
 
 import java.math.BigDecimal;
 
-/**
- * Peca/produto do estoque (RF003). Contem as regras de negocio RN02 e RN03
- * (nunca deixar o estoque negativo e sempre dar baixa apos uma venda).
- */
 public class Produto {
 
     private int idProduto;
@@ -25,12 +21,10 @@ public class Produto {
         this.fornecedor = fornecedor;
     }
 
-    /** RN02 - nao deixa vender mais do que existe em estoque. */
     public boolean temEstoqueDisponivel(int quantidadeDesejada) {
         return quantidadeDesejada > 0 && quantidadeDesejada <= this.quantidadeEstoque;
     }
 
-    /** RN03 - baixa automatica de estoque apos venda concluida. */
     public void darBaixaEstoque(int quantidadeVendida) {
         if (!temEstoqueDisponivel(quantidadeVendida)) {
             throw new IllegalStateException(

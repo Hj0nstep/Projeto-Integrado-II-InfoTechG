@@ -6,17 +6,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.HexFormat;
 
-/**
- * Hash de senha com SHA-256 + salt aleatorio por usuario (Etapa 4).
- *
- * Nao ha biblioteca de bcrypt/Argon2 disponivel no projeto (Ant/Java SE puro,
- * sem gerenciador de dependencias), entao o hash e feito com
- * {@link MessageDigest} + {@link SecureRandom}, o que evita os algoritmos
- * proibidos (MD5/SHA1) e a senha em texto puro, mesmo nao sendo tao forte
- * quanto bcrypt/Argon2.
- *
- * Formato armazenado: {@code saltHex:hashHex}.
- */
 public final class SenhaUtil {
 
     private static final String ALGORITMO = "SHA-256";

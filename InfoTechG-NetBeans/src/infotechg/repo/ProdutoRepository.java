@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Produtos via JDBC (Etapa 4), com o Fornecedor associado
- * carregado por JOIN em cada consulta.
- */
 public class ProdutoRepository {
 
     private static final String SELECT_BASE =

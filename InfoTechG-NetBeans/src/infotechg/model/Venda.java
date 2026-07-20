@@ -3,20 +3,6 @@ package infotechg.model;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-/**
- * Venda de um produto para um cliente (RF005).
- *
- * O construtor apenas monta o registro da venda e calcula o total inicial
- * (com base no preco atual do produto). A baixa efetiva de estoque (RN02/RN03)
- * so acontece quando {@link #confirmar()} e chamado explicitamente - por
- * exemplo, quando o usuario clica em "Salvar" na tela de vendas (Etapa 3/4).
- * Isso evita que simplesmente criar um objeto Venda (ex.: para pre-visualizar
- * o total) tenha o efeito colateral de mexer no estoque.
- *
- * valorTotalVenda e tratado como um retrato (snapshot) do momento da venda,
- * assim como no banco de dados: alterar quantidadeVendida ou produto depois
- * de criada a venda NAO recalcula o total automaticamente.
- */
 public class Venda {
 
     private int idVenda;
@@ -48,13 +34,6 @@ public class Venda {
         return produto.getPreco().multiply(BigDecimal.valueOf(quantidadeVendida));
     }
 
-    /**
-     * Efetiva a venda: valida (RN02) e da baixa no estoque do produto (RN03).
-     * Deve ser chamado uma unica vez, no momento em que a venda e confirmada
-     * pelo usuario (nunca automaticamente no construtor).
-     *
-     * @throws IllegalStateException se nao houver estoque suficiente do produto.
-     */
     public void confirmar() {
         if (produto == null) {
             throw new IllegalStateException("Venda sem produto associado.");

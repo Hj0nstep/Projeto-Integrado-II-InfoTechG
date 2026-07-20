@@ -1,10 +1,5 @@
 package infotechg.repo;
 
-/**
- * Ponto unico de acesso aos repositorios, todos JDBC-backed (Etapa 4),
- * resolvendo a ordem de dependencia entre eles (ex.: Vendas precisa de
- * Clientes/Produtos/Usuarios para reconstruir os objetos aninhados).
- */
 public class Repositorios {
 
     public final UsuarioRepository usuarios = new UsuarioRepository();

@@ -3,11 +3,6 @@ package infotechg.view;
 import java.awt.Color;
 import java.awt.Font;
 
-/**
- * Paleta de cores e tipografia definidas no documento de UX/UI da Etapa 2,
- * reaproveitadas aqui para manter a identidade visual entre o protótipo e
- * a implementação Swing.
- */
 public final class UiTheme {
 
     public static final Color PRIMARIO = new Color(0x2C, 0x5F, 0x8A);

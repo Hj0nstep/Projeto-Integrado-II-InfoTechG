@@ -10,10 +10,6 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * Fábrica de componentes Swing com a aparência padrão do sistema, evitando
- * duplicar a estilização (fontes/cores do {@link UiTheme}) em cada painel.
- */
 final class Componentes {
 
     private Componentes() {

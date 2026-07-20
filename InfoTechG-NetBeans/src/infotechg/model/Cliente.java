@@ -1,8 +1,5 @@
 package infotechg.model;
 
-/**
- * Cliente da loja (RF002).
- */
 public class Cliente {
 
     private int idCliente;

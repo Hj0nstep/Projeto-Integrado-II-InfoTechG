@@ -11,8 +11,10 @@ InfoTechG-NetBeans/src/infotechg/dao/db.properties
 Thumbs.db
 *.class
 
-# Configuracao local do agente (nao faz parte do projeto)
+# Configuracoes locais de ferramentas de desenvolvimento
 .claude/
+.vscode/
+.idea/
 
 # Zips ja empacotados para entrega no portal (conteudo duplicado do codigo acima)
 Entregas_ZIP/

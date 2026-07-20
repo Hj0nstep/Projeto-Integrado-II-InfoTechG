@@ -21,11 +21,6 @@ import javax.swing.JTable;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * Registro de vendas (wireframe 06 / RF005). Monta um carrinho local antes
- * de confirmar - so ao clicar em "Finalizar Venda" cada item vira uma
- * {@link infotechg.model.Venda} persistida (RN02/RN03 aplicadas por item).
- */
 public class VendaPanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;

@@ -14,9 +14,6 @@ import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * CRUD de clientes (wireframe 04 / RF002).
- */
 public class ClientePanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;

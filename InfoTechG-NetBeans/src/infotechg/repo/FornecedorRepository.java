@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Fornecedores via JDBC (Etapa 4). Modulo exclusivo do
- * Gerente (RN06), verificado na camada de view (MainFrame).
- */
 public class FornecedorRepository {
 
     public List<Fornecedor> findAll() {

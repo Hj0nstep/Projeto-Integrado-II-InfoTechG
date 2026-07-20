@@ -14,10 +14,6 @@ import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * CRUD de fornecedores (wireframe 05 / RF004). Modulo exclusivo do Gerente,
- * conforme RN06 e verificado em {@link MainFrame}.
- */
 public class FornecedorPanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;

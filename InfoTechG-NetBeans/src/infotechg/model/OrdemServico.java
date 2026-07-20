@@ -2,9 +2,6 @@ package infotechg.model;
 
 import java.time.LocalDateTime;
 
-/**
- * Ordem de servico aberta por um Tecnico para um Cliente (RF006).
- */
 public class OrdemServico {
 
     private int idOS;

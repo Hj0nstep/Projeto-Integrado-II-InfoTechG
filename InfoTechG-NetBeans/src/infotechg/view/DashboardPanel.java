@@ -11,9 +11,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-/**
- * Painel inicial (wireframe 02) com indicadores rapidos do sistema.
- */
 public class DashboardPanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;

@@ -11,10 +11,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Usuarios via JDBC (Etapa 4). A senha e verificada com
- * {@link infotechg.util.SenhaUtil} (SHA-256 + salt) contra o hash armazenado.
- */
 public class UsuarioRepository {
 
     private static final String SELECT_BASE =

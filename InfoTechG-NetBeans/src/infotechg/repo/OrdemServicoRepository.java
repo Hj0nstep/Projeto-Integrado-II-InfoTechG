@@ -16,11 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Ordens_Servico via JDBC (Etapa 4). Cliente e tecnico
- * responsavel sao resolvidos pelos respectivos repositorios ao montar cada
- * linha; o status e persistido pelo nome do enum ({@link StatusOS#name()}).
- */
 public class OrdemServicoRepository {
 
     private final ClienteRepository clienteRepository;

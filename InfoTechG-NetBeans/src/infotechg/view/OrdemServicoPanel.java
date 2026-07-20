@@ -20,10 +20,6 @@ import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * Abertura e acompanhamento de Ordens de Servico (wireframe 07 / RF006),
- * com status sempre exibido em texto + cor (RN05, acessibilidade).
- */
 public class OrdemServicoPanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;

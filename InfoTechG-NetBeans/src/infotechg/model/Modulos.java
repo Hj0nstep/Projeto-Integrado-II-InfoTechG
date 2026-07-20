@@ -1,8 +1,5 @@
 package infotechg.model;
 
-/**
- * Nomes dos modulos do sistema, usados para checar permissao de cada perfil.
- */
 public final class Modulos {
 
     public static final String CLIENTES = "CLIENTES";

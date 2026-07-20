@@ -8,12 +8,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-/**
- * Fabrica de conexoes JDBC com o MySQL (Etapa 4).
- *
- * As credenciais ficam em {@code db.properties} (classpath, pacote
- * infotechg.dao), nunca hardcoded no codigo-fonte.
- */
 public final class ConexaoBD {
 
     private static final Properties CONFIGURACAO = carregarConfiguracao();

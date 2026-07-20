@@ -11,10 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Clientes via JDBC (Etapa 4). Mantem a mesma API publica
- * usada pelas telas desde a Etapa 3 (findAll/findById/save/deleteById/cadastrar).
- */
 public class ClienteRepository {
 
     public List<Cliente> findAll() {

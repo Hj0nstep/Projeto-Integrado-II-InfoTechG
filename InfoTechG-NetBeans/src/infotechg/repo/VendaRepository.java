@@ -16,12 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-/**
- * Acesso a tabela Vendas via JDBC (Etapa 4). Cliente, Produto e Usuario
- * responsavel sao resolvidos pelos respectivos repositorios ao montar cada
- * linha (dataset pequeno de uso academico/desktop - join manual mantem a
- * SQL simples em vez de um JOIN de 4 tabelas com aliases).
- */
 public class VendaRepository {
 
     private final ClienteRepository clienteRepository;
@@ -82,13 +76,6 @@ public class VendaRepository {
         }
     }
 
-    /**
-     * Registra e confirma uma venda (RN02/RN03): a baixa no estoque do
-     * produto acontece antes de o registro ser persistido, e o novo nivel
-     * de estoque e gravado no banco na mesma operacao.
-     *
-     * @throws IllegalStateException se o produto nao tiver estoque suficiente.
-     */
     public Venda registrar(int quantidade, Cliente cliente, Produto produto, Usuario vendedorResponsavel) {
         Venda venda = new Venda(0, LocalDateTime.now(), quantidade, cliente, produto, vendedorResponsavel);
         venda.confirmar();
@@ -147,8 +134,6 @@ public class VendaRepository {
                 resultado.getTimestamp("data_venda").toLocalDateTime(),
                 resultado.getInt("quantidade_vendida"),
                 cliente, produto, vendedor);
-        // valor_total_venda e um retrato do momento da venda: preserva o valor
-        // gravado em vez do recalculo feito pelo construtor com o preco atual.
         venda.setValorTotalVenda(resultado.getBigDecimal("valor_total_venda"));
         return venda;
     }

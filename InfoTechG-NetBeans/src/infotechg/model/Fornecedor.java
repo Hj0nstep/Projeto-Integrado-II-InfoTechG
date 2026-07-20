@@ -1,8 +1,5 @@
 package infotechg.model;
 
-/**
- * Empresa fornecedora de pecas (RF004). Visivel apenas ao Gerente.
- */
 public class Fornecedor {
 
     private int idFornecedor;

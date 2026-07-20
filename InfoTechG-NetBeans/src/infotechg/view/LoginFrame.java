@@ -14,10 +14,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-/**
- * Tela de login (wireframe 01). Autentica contra {@link Repositorios#usuarios}
- * e, em caso de sucesso, abre a {@link MainFrame} para o usuario autenticado.
- */
 public class LoginFrame extends JFrame {
 
     private final Repositorios repositorios;

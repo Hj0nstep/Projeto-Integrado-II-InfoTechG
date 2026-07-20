@@ -17,10 +17,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-/**
- * Janela principal pos-login: cabecalho + menu lateral (filtrado por
- * permissao do usuario) + area de conteudo em {@link CardLayout}.
- */
 public class MainFrame extends JFrame {
 
     private final Repositorios repositorios;

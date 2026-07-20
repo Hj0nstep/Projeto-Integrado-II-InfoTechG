@@ -19,10 +19,6 @@ import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-/**
- * CRUD de produtos (wireframe 03 / RF003), com destaque visual de estoque
- * zerado conforme RN02.
- */
 public class ProdutoPanel extends JPanel implements Atualizavel {
 
     private final Repositorios repositorios;
