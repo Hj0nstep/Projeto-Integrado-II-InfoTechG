@@ -1,0 +1,22 @@
+@startsalt
+{
+  <b>InfoTechG > Clientes  | .            | [Voltar]
+  ==
+  {
+    Nome      | "                    "
+    Telefone  | "                    "
+    Email     | "                    "
+  }
+  [Salvar] | [Editar] | [Excluir] | [Limpar]
+  ==
+  <b>Clientes cadastrados
+  {#
+    <b>ID | <b>Nome          | <b>Telefone       | <b>Email
+    1    | Jorge Santos     | (21) 99999-0001   | jorge.s@email.com
+    2    | Maria Silva      | (11) 98888-0002   | maria.silva@email.com
+    3    | Carlos Pereira   | (31) 97777-0003   | carlos.p@email.com
+  }
+  --
+  <color:#6b7280><size:10>Botoes Salvar/Editar/Excluir sempre nesta posicao (RNF003)
+}
+@endsalt

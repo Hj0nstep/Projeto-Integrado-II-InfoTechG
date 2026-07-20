@@ -1,0 +1,22 @@
+@startsalt
+{
+  <b>InfoTechG > Ordens de Servico (Gerente / Tecnico)  | .  | [Voltar]
+  ==
+  {
+    Cliente             | ^Selecione um cliente^
+    Defeito relatado    | "                              "
+    Status              | ^Em analise^
+  }
+  [Abrir OS] | [Atualizar Status] | [Cancelar]
+  ==
+  <b>Ordens de servico
+  {#
+    <b>OS  | <b>Cliente       | <b>Defeito                  | <b>Status
+    3     | Jorge Santos     | Notebook tela quebrada      | <color:#2e7d32>Concluido
+    1     | Maria Silva      | Computador nao liga         | <color:#d97706>Aguardando peca
+    5     | Maria Silva      | Mouse com defeito           | <color:#1565c0>Em analise
+  }
+  --
+  <color:#6b7280><size:10>Status sempre exibido com texto + cor (nao so cor) para acessibilidade
+}
+@endsalt

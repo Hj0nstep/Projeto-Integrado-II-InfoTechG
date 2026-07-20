@@ -1,0 +1,24 @@
+@startsalt
+{
+  <b>InfoTechG          | .            | Usuario: Jonas (Gerente) | [Sair]
+  ==
+  {SI
+    {
+      [Clientes]
+      [Produtos]
+      [Fornecedores]
+      [Vendas]
+      [Ordens de Servico]
+    } |  {
+      <b>Painel Geral
+      ==
+      Clientes cadastrados:     52
+      Produtos em estoque:      134
+      Vendas hoje:              8
+      OS em andamento:          5
+      --
+      <color:#6b7280><size:10>Menu lateral muda conforme o perfil logado (RNF001)
+    }
+  }
+}
+@endsalt

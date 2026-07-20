@@ -1,0 +1,23 @@
+@startsalt
+{
+  <b>InfoTechG > Vendas (Gerente / Vendedor)  | .   | [Voltar]
+  ==
+  {
+    Cliente     | ^Selecione um cliente^
+    Produto     | ^Selecione um produto^
+    Quantidade  | "  2  "
+    Total (R$)  | "300,00" (calculado)
+  }
+  [Adicionar item] | [Finalizar Venda] | [Cancelar]
+  ==
+  <b>Itens da venda atual
+  {#
+    <b>Produto            | <b>Qtd | <b>Subtotal
+    Mouse Gamer XYZ       | 2     | 300,00
+  }
+  ==
+  <color:#b91c1c>! Estoque insuficiente para "SSD 1TB NVMe" - venda bloqueada
+  --
+  <color:#6b7280><size:10>Ao finalizar, o sistema da baixa automatica no estoque (RN03)
+}
+@endsalt

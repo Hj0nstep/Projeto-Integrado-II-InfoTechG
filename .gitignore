@@ -1,0 +1,21 @@
+# NetBeans / Ant build output
+InfoTechG-NetBeans/build/
+InfoTechG-NetBeans/dist/
+InfoTechG-NetBeans/nbproject/private/
+
+# Credenciais locais de banco de dados (nao versionar - usar db.properties.example como modelo)
+InfoTechG-NetBeans/src/infotechg/dao/db.properties
+
+# Sistema operacional / IDE
+.DS_Store
+Thumbs.db
+*.class
+
+# Configuracao local do agente (nao faz parte do projeto)
+.claude/
+
+# Zips ja empacotados para entrega no portal (conteudo duplicado do codigo acima)
+Entregas_ZIP/
+
+# Video de outro projeto, nao pertence a este repositorio
+Projeto-Integrado InfoTechG.mp4

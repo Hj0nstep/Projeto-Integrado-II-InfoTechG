@@ -1,0 +1,16 @@
+@startsalt
+{
+  <b>InfoTechG - Login
+  ==
+  {
+    Usuario  | "                    "
+    Senha    | "********            "
+  }
+  ==
+  [ ] Lembrar usuario
+  ==
+  [Entrar] | [Cancelar]
+  --
+  <color:#6b7280><size:10>Acesso restrito - Gerente / Vendedor / Tecnico
+}
+@endsalt

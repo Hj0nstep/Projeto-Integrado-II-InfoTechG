@@ -1,0 +1,23 @@
+@startsalt
+{
+  <b>InfoTechG > Produtos (Gerente)  | .    | [Voltar]
+  ==
+  {
+    Nome                | "                    "
+    Preco (R$)          | "                    "
+    Qtd. em estoque     | "                    "
+    Fornecedor          | ^Selecione um fornecedor^
+  }
+  [Salvar] | [Editar] | [Excluir] | [Limpar]
+  ==
+  <b>Produtos em estoque
+  {#
+    <b>ID | <b>Nome                      | <b>Preco   | <b>Estoque
+    1    | Placa de Video RTX 4060      | 2500.00   | <color:#2e7d32>10
+    2    | Mouse Gamer XYZ              | 150.00    | <color:#2e7d32>50
+    5    | SSD 1TB NVMe                 | 450.00    | <color:#b91c1c>0 (sem estoque)
+  }
+  --
+  <color:#6b7280><size:10>Linha vermelha = estoque zerado; venda desse item fica bloqueada (regra critica)
+}
+@endsalt

@@ -1,0 +1,99 @@
+@startuml diagrama_classes_UML
+title InfoTechG - Diagrama de Classes (Modelo de Dominio)
+
+skinparam classAttributeIconSize 0
+skinparam backgroundColor white
+skinparam class {
+  BackgroundColor #EAF2FB
+  BorderColor #2C5F8A
+  ArrowColor #2C5F8A
+}
+
+abstract class Usuario {
+  - idUsuario : int
+  - login : String
+  - senhaHash : String
+  - nomeCompleto : String
+  --
+  + autenticar(senha : String) : boolean
+  + {abstract} getPermissoes() : List<String>
+}
+
+class Gerente extends Usuario {
+  + getPermissoes() : List<String>
+}
+
+class Vendedor extends Usuario {
+  + getPermissoes() : List<String>
+}
+
+class Tecnico extends Usuario {
+  + getPermissoes() : List<String>
+}
+
+class Cliente {
+  - idCliente : int
+  - nome : String
+  - telefone : String
+  - email : String
+  --
+  + getters/setters
+}
+
+class Fornecedor {
+  - idFornecedor : int
+  - nomeEmpresa : String
+  - telefoneContato : String
+  - emailContato : String
+  --
+  + getters/setters
+}
+
+class Produto {
+  - idProduto : int
+  - nome : String
+  - preco : BigDecimal
+  - quantidadeEstoque : int
+  --
+  + darBaixaEstoque(qtd : int) : void
+  + temEstoqueDisponivel(qtd : int) : boolean
+}
+
+class Venda {
+  - idVenda : int
+  - dataVenda : LocalDateTime
+  - quantidadeVendida : int
+  - valorTotalVenda : BigDecimal
+  --
+  + calcularTotal() : BigDecimal
+}
+
+enum StatusOS {
+  EM_ANALISE
+  AGUARDANDO_PECA
+  CONCLUIDO
+  ENTREGUE
+}
+
+class OrdemServico {
+  - idOS : int
+  - dataAbertura : LocalDateTime
+  - defeitoRelatado : String
+  - status : StatusOS
+  --
+  + atualizarStatus(novoStatus : StatusOS) : void
+}
+
+Usuario <|-- Gerente
+Usuario <|-- Vendedor
+Usuario <|-- Tecnico
+
+Produto "0..*" --> "1" Fornecedor : fornecido por
+Venda "0..*" --> "1" Cliente : realizada para
+Venda "0..*" --> "1" Produto : contem
+Venda "0..*" --> "1" Vendedor : registrada por
+OrdemServico "0..*" --> "1" Cliente : aberta para
+OrdemServico "0..*" --> "1" Tecnico : atendida por
+OrdemServico "1" --> "1" StatusOS
+
+@enduml

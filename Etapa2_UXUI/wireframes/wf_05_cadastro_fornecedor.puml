@@ -1,0 +1,21 @@
+@startsalt
+{
+  <b>InfoTechG > Fornecedores (Gerente)  | .    | [Voltar]
+  ==
+  {
+    Nome da empresa      | "                    "
+    Telefone de contato  | "                    "
+    Email de contato     | "                    "
+  }
+  [Salvar] | [Editar] | [Excluir] | [Limpar]
+  ==
+  <b>Fornecedores cadastrados
+  {#
+    <b>ID | <b>Empresa            | <b>Telefone      | <b>Email
+    1    | TechDistro Brasil     | (11) 5555-1010  | vendas@techdistro.com
+    2    | PC Pecas Atacado      | (41) 4444-2020  | contato@pcpecas.com
+  }
+  --
+  <color:#6b7280><size:10>Tela visivel apenas ao perfil Gerente (RN06)
+}
+@endsalt
